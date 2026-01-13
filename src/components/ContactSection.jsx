@@ -210,16 +210,18 @@ const ContactSection = () => {
             {/* Social Links */}
             <div className="bg-white rounded-3xl p-6 shadow-xl">
               <h3 className="text-xl font-bold text-gray-800 mb-4">सोशल मीडिया</h3>
+
               <div className="flex gap-4">
-                {['Facebook', 'Instagram', 'Twitter', 'YouTube'].map((platform, index) => (
-                  <button
-                    key={index}
-                    className="flex-1 py-3 bg-gray-50 rounded-xl text-gray-600 font-medium hover:bg-orange-50 hover:text-orange-600 transition-colors text-sm"
-                  >
-                    {platform}
-                  </button>
-                ))}
+                <a
+                  href="https://www.instagram.com/kiranjlandge?igsh=MWViYnp1YjA5dm43ag%3D%3D&utm_source=qr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 py-3 text-center bg-gray-50 rounded-xl text-gray-600 font-medium hover:bg-orange-50 hover:text-orange-600 transition-colors text-sm"
+                >
+                  Instagram
+                </a>
               </div>
+
             </div>
           </div>
         </div>
