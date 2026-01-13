@@ -52,7 +52,7 @@ const Header = () => {
             className="flex items-center gap-3 cursor-pointer"
             onClick={() => scrollToSection('hero')}
           >
-            <div className={`w-12 h-12 rounded-full bg-gradient-to-br from-white-500 to-white-600 flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform duration-300`}>
+            <div className={`w-12 h-12 rounded-full bg-white  flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform duration-300`}>
               <img 
                 src="/assets/bghhjjjjj.png" 
                 alt="Logo" 
