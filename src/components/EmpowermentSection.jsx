@@ -84,12 +84,22 @@ const EmpowermentSection = () => {
           <div className={`relative transition-all duration-700 ${isVisible ? 'animate-fade-in-left' : 'opacity-0'}`}>
             <div className="space-y-4">
               {/* Main Image */}
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                <img 
-                  src="/assets/11.png"
-                  alt="सक्षमीकरण कार्यक्रम"
-                  className="w-full h-80 object-cover bg-gradient-to-br from-orange-100 to-orange-200"
-                />
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-orange-100 to-orange-200">
+                {empowermentPrograms[activeCategory].images && empowermentPrograms[activeCategory].images[0] ? (
+                  <img 
+                    src='/assets/11.png'
+                    alt="सक्षमीकरण कार्यक्रम"
+                    className="w-full h-80 object-cover"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.parentElement.innerHTML += '<div class="w-full h-80 flex items-center justify-center text-gray-500"><p>Image not available</p></div>';
+                    }}
+                  />
+                ) : (
+                  <div className="w-full h-80 flex items-center justify-center">
+                    <p className="text-gray-500">No image available</p>
+                  </div>
+                )}
                 
                 {/* Overlay Badge */}
                 <div className="absolute bottom-6 left-6 right-6">
@@ -106,20 +116,23 @@ const EmpowermentSection = () => {
 
               {/* Thumbnail Gallery */}
               <div className="grid grid-cols-3 gap-3">
-                {empowermentPrograms[activeCategory].images.slice(1, 4).map((image, idx) => (
-                  image && (
+                {empowermentPrograms[activeCategory].images && empowermentPrograms[activeCategory].images.slice(1, 4).map((image, idx) => 
+                  image ? (
                     <div 
                       key={idx}
-                      className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:scale-105"
+                      className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:scale-105 bg-gradient-to-br from-orange-50 to-orange-100"
                     >
                       <img 
                         src={image}
                         alt={`${empowermentPrograms[activeCategory].category} ${idx + 2}`}
-                        className="w-full h-24 object-cover bg-gradient-to-br from-orange-50 to-orange-100"
+                        className="w-full h-24 object-cover"
+                        onError={(e) => {
+                          e.target.style.display = 'none';
+                        }}
                       />
                     </div>
-                  )
-                ))}
+                  ) : null
+                )}
               </div>
             </div>
           </div>
