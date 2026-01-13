@@ -54,7 +54,7 @@ const Header = () => {
           >
             <div className={`w-12 h-12 rounded-full bg-gradient-to-br from-white-500 to-white-600 flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform duration-300`}>
               <img 
-                src="/assets/logo.jpg" 
+                src="/assets/bghhjjjjj.png" 
                 alt="Logo" 
                 className="w-8 h-8 object-contain"
               />
