@@ -84,7 +84,7 @@ const EmpowermentSection = () => {
           <div className={`relative transition-all duration-700 ${isVisible ? 'animate-fade-in-left' : 'opacity-0'}`}>
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="https://customer-assets.emergentagent.com/job_pragati-darshan/artifacts/wlnv9dv4_Screenshot_2026-01-13_at_2.46.00_AM-removebg-preview__1_-removebg-preview.png"
+                src="/assets/11.png"
                 alt="सक्षमीकरण कार्यक्रम"
                 className="w-full h-auto object-cover bg-gradient-to-br from-orange-100 to-orange-200"
               />
