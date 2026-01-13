@@ -139,7 +139,7 @@ const EmpowermentSection = () => {
                         alt={`${empowermentPrograms[activeCategory].category} ${index + 1}`}
                         className="w-full h-full object-cover bg-gradient-to-br from-gray-100 to-gray-200"
                         onError={(e) => {
-                          e.target.src = '/assets/11.png';
+                          e.target.src = `/assets/${image}`;
                         }}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
