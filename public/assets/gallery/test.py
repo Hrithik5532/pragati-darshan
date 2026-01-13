@@ -1,21 +1,24 @@
 import os
+from PIL import Image
 
-def rename_images_sequentially(
+def rename_and_convert_images_to_jpg(
     folder_path,
-    prefix="img",
+    prefix="gallery",
     start_index=1,
-    padding=3
+    padding=3,
+    quality=90
 ):
     """
-    Rename all images in a folder sequentially.
+    Convert all images to JPG and rename sequentially.
 
-    Example:
-    img_001.jpg, img_002.jpg, ...
+    Output:
+    gallery_001.jpg, gallery_002.jpg, ...
 
-    :param folder_path: Path to image folder
-    :param prefix: Filename prefix (default: img)
-    :param start_index: Starting number (default: 1)
-    :param padding: Zero padding length (default: 3)
+    :param folder_path: Folder containing images
+    :param prefix: Filename prefix
+    :param start_index: Starting index
+    :param padding: Zero padding
+    :param quality: JPG quality (1–100)
     """
 
     valid_extensions = (".jpg", ".jpeg", ".png", ".JPG", ".JPEG", ".PNG", ".dng", ".DNG")
@@ -26,18 +29,29 @@ def rename_images_sequentially(
     )
 
     for i, filename in enumerate(files, start=start_index):
-        ext = os.path.splitext(filename)[1]
-        new_name = f"{prefix}_{str(i).zfill(padding)}{ext}"
-
         old_path = os.path.join(folder_path, filename)
+        new_name = f"{prefix}_{str(i).zfill(padding)}.jpg"
         new_path = os.path.join(folder_path, new_name)
 
-        os.rename(old_path, new_path)
-        print(f"{filename}  →  {new_name}")
+        try:
+            with Image.open(old_path) as img:
+                # Convert to RGB (required for JPG)
+                img = img.convert("RGB")
+                img.save(new_path, "JPEG", quality=quality)
 
-rename_images_sequentially(
+            # Remove original file ONLY after successful save
+            if old_path != new_path:
+                os.remove(old_path)
+
+            print(f"{filename}  →  {new_name}")
+
+        except Exception as e:
+            print(f"❌ Failed to process {filename}: {e}")
+
+rename_and_convert_images_to_jpg(
     folder_path="/Users/hrithik/Desktop/images/frontend/public/assets/gallery",
     prefix="gallery",
     start_index=1,
-    padding=3
+    padding=3,
+    quality=90
 )
