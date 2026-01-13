@@ -77,7 +77,7 @@ const Header = () => {
                   activeSection === item.id
                     ? 'bg-white-500 text-white shadow-lg'
                     : isScrolled
-                      ? 'text-gray-700 hover:bg-white-100 hover:text-white-600'
+                      ? 'text-gray-700 hover:bg-orange-100 hover:text-orange-600'
                       : 'text-white/90 hover:bg-white/20 hover:text-white'
                 }`}
               >
