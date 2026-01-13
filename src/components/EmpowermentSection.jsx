@@ -80,63 +80,60 @@ const EmpowermentSection = () => {
 
         {/* Programs Display */}
         <div className="grid lg:grid-cols-2 gap-8 items-center">
-          {/* Left - Image Gallery */}
+          {/* Left - Image */}
           <div className={`relative transition-all duration-700 ${isVisible ? 'animate-fade-in-left' : 'opacity-0'}`}>
-            <div className="space-y-4">
-              {/* Main Image */}
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-orange-100 to-orange-200">
-                {empowermentPrograms[activeCategory].images && empowermentPrograms[activeCategory].images[0] ? (
-                  <img 
-                    src='/assets/11.png'
-                    alt="सक्षमीकरण कार्यक्रम"
-                    className="w-full h-80 object-cover"
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                      e.target.parentElement.innerHTML += '<div class="w-full h-80 flex items-center justify-center text-gray-500"><p>Image not available</p></div>';
-                    }}
-                  />
-                ) : (
-                  <div className="w-full h-80 flex items-center justify-center">
-                    <p className="text-gray-500">No image available</p>
-                  </div>
-                )}
-                
-                {/* Overlay Badge */}
-                <div className="absolute bottom-6 left-6 right-6">
-                  <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
-                    <p className="text-orange-600 font-bold text-lg">
-                      {empowermentPrograms[activeCategory].category}
-                    </p>
-                    <p className="text-gray-600 text-sm">
-                      {empowermentPrograms[activeCategory].programs.length} कार्यक्रम पूर्ण
-                    </p>
-                  </div>
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_pragati-darshan/artifacts/wlnv9dv4_Screenshot_2026-01-13_at_2.46.00_AM-removebg-preview__1_-removebg-preview.png"
+                alt="सक्षमीकरण कार्यक्रम"
+                className="w-full h-auto object-cover bg-gradient-to-br from-orange-100 to-orange-200"
+              />
+              
+              {/* Overlay Badge */}
+              <div className="absolute bottom-6 left-6 right-6">
+                <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
+                  <p className="text-orange-600 font-bold text-lg">
+                    {empowermentPrograms[activeCategory].category}
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    {empowermentPrograms[activeCategory].programs.length} कार्यक्रम पूर्ण
+                  </p>
                 </div>
-              </div>
-
-              {/* Thumbnail Gallery */}
-              <div className="grid grid-cols-3 gap-3">
-                {empowermentPrograms[activeCategory].images && empowermentPrograms[activeCategory].images.slice(1, 4).map((image, idx) => 
-                  image ? (
-                    <div 
-                      key={idx}
-                      className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer transform hover:scale-105 bg-gradient-to-br from-orange-50 to-orange-100"
-                    >
-                      <img 
-                        src={image}
-                        alt={`${empowermentPrograms[activeCategory].category} ${idx + 2}`}
-                        className="w-full h-24 object-cover"
-                        onError={(e) => {
-                          e.target.style.display = 'none';
-                        }}
-                      />
-                    </div>
-                  ) : null
-                )}
               </div>
             </div>
           </div>
-        </div>  
+
+          {/* Right - Programs List */}
+          <div className={`space-y-4 transition-all duration-700 ${isVisible ? 'animate-fade-in-right' : 'opacity-0'}`}>
+            <h3 className="text-2xl font-bold text-gray-800 mb-6">
+              {empowermentPrograms[activeCategory].category}
+            </h3>
+            
+            {empowermentPrograms[activeCategory].programs.map((program, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-2xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-x-2 border-l-4 border-orange-500"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Check className="w-5 h-5 text-orange-600" />
+                  </div>
+                  <p className="text-gray-700 font-medium leading-relaxed">{program}</p>
+                </div>
+              </div>
+            ))}
+
+            {/* CTA */}
+            <button 
+              onClick={() => document.getElementById('roads')?.scrollIntoView({ behavior: 'smooth' })}
+              className="mt-6 flex items-center gap-2 text-orange-600 font-semibold hover:text-orange-700 transition-colors"
+            >
+              रस्ते विकास पहा
+              <ChevronDown className="w-5 h-5 animate-bounce" />
+            </button>
+          </div>
+        </div>
 
         {/* Additional Info Cards */}
         <div className="mt-16 grid sm:grid-cols-3 gap-6">
