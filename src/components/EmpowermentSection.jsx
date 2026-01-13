@@ -124,6 +124,35 @@ const EmpowermentSection = () => {
               </div>
             ))}
 
+            {/* Image Gallery for Current Category */}
+            {empowermentPrograms[activeCategory].images && (
+              <div className="mt-8">
+                <h4 className="text-lg font-semibold text-gray-700 mb-4">कार्यक्रम फोटो</h4>
+                <div className="grid grid-cols-2 gap-3">
+                  {empowermentPrograms[activeCategory].images.map((image, index) => (
+                    <div
+                      key={index}
+                      className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 aspect-square"
+                    >
+                      <img 
+                        src={`/assets/${image}`}
+                        alt={`${empowermentPrograms[activeCategory].category} ${index + 1}`}
+                        className="w-full h-full object-cover bg-gradient-to-br from-gray-100 to-gray-200"
+                        onError={(e) => {
+                          e.target.src = '/assets/11.png';
+                        }}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                        <p className="text-white text-xs font-medium">
+                          {empowermentPrograms[activeCategory].category}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* CTA */}
             <button 
               onClick={() => document.getElementById('roads')?.scrollIntoView({ behavior: 'smooth' })}
