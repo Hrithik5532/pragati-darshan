@@ -76,7 +76,8 @@ export const empowermentPrograms = [
       "४००+ गरीब गरजू महिलांना मोफत शिलाई मशीन वाटप",
       "१५०+ गरीब गरजू महिलांना मोफत घरघंटी वाटप",
       "८०+ महिला बचत गटातील महिलांना मोफत कुकर वाटप"
-    ]
+    ],
+    images: ['https://drive.google.com/file/d/1bRUGtY0YXB5KYvDOq08T9-OWoqmLXSNL/view?usp=drive_link','https://drive.google.com/file/d/109uzvN0_Up7MiI82ngJRcog7x5Gt1D89/view?usp=drive_link','https://drive.google.com/file/d/1ijQF1hRA3spwSf9Ub9ZsK1HZwFv9JI_D/view?usp=drive_link','']
   },
   {
     category: "शिक्षण सहाय्य",
@@ -86,7 +87,8 @@ export const empowermentPrograms = [
       "१६०+ गरीब गरजू विद्यार्थ्यांना मोफत टॅब वाटप",
       "५०+ गरीब गरजू विद्यार्थ्यांना मोफत लॅपटॉप वाटप",
       "विभागातील सावते महाविद्यालयातील विद्यार्थ्यांना मोफत गणवेश वाटप"
-    ]
+    ],
+    images: ['https://drive.google.com/file/d/13h8HmO0hWRdIN9IjGI3izvNuH9pAzKUz/view?usp=sharing','https://drive.google.com/file/d/1fHVAxIgG5doMthvBEhCO-2FRtVMi_wQR/view?usp=drive_link','https://drive.google.com/file/d/1hk9E85yWqy--525gcwuZX4sDnWeGiuNk/view?usp=drive_link','']
   },
   {
     category: "सामाजिक कार्य",
@@ -97,7 +99,8 @@ export const empowermentPrograms = [
       "सार्वजनिक गणेशोत्सव मंडळांना मोफत गणेश मूर्ती वितरण",
       "९,०००+ नागरिकांना मोफत छत्री वाटप",
       "१५०+ फेरीवाल्यांना मोफत व्यावसायिक छत्री वाटप"
-    ]
+    ],
+    images: ['https://drive.google.com/file/d/18zjkleVqmvQw_Hx2HOBbAJBLjkMHKvq9/view?usp=drive_link','https://drive.google.com/file/d/1xhVl3ZzexNx0K4_NfPLO1NI-YHMN0jNA/view?usp=drive_link','https://drive.google.com/file/d/1MhSNrquUvlmNkREXCNoEgkq9AsVQbTJ4/view?usp=drive_link','https://drive.google.com/file/d/1XHklsdi9wNFEasF3pMGbpKQcLQAOxP9m/view?usp=drive_link']
   },
   {
     category: "कोविड योद्धा",
@@ -107,7 +110,8 @@ export const empowermentPrograms = [
       "५००+ कोविड रुग्णांना रेमडीसीवीर इंजेक्शन उपलब्ध",
       "१७०+ मोतीबिंदू रुग्णांची मोफत शस्त्रक्रिया",
       "४०००+ लाडकी बहीण योजना अर्ज भरण्यास मदत"
-    ]
+    ],
+    images: ['https://drive.google.com/file/d/1PoG2hb5vHky2IR0R-0b-qdMKhM8rQA8O/view?usp=drive_link','https://drive.google.com/file/d/1LFvJ1WWKVs1k0gVIoWS9zHxxoSxy43Xl/view?usp=drive_link','https://drive.google.com/file/d/1DSq-Ghzlw3hSbIpuWY3YirAwUk7zan6T/view?usp=drive_link','https://drive.google.com/file/d/1TUZ_G0_ocC7cShO0XmJYve5FhLHlobLX/view?usp=drive_link']
   }
 ];
 
@@ -192,11 +196,11 @@ export const timelineEvents = [
 
 // Team Leaders from PDF
 export const teamLeaders = [
-  { name: "मा. नरेंद्र मोदी", position: "प्रधानमंत्री", tier: 1 },
-  { name: "मा. एकनाथ शिंदे", position: "विद्यमान उपमुख्यमंत्री", tier: 1 },
-  { name: "मा. देवेंद्र फडणवीस", position: "मुख्यमंत्री, महाराष्ट्र", tier: 1 },
-  { name: "मा. उद्धव ठाकरे", position: "शिवसेना पक्षप्रमुख", tier: 2 },
-  { name: "श्री. राम कदम", position: "आमदार", tier: 2 }
+  { name: "मा. नरेंद्र मोदी", position: "प्रधानमंत्री", tier: 1, image:""},
+  { name: "मा. एकनाथ शिंदे", position: "विद्यमान उपमुख्यमंत्री", tier: 1, image:""},
+  { name: "मा. देवेंद्र फडणवीस", position: "मुख्यमंत्री, महाराष्ट्र", tier: 1, image:""},
+  { name: "मा. उद्धव ठाकरे", position: "शिवसेना पक्षप्रमुख", tier: 2, image:""},
+  { name: "श्री. राम कदम", position: "आमदार", tier: 2, image:""}
 ];
 
 // Nav Items
