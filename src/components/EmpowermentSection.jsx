@@ -81,29 +81,6 @@ const EmpowermentSection = () => {
         {/* Programs Display */}
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left - Image */}
-          <div className={`relative transition-all duration-700 ${isVisible ? 'animate-fade-in-right' : 'opacity-0'}`}>
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-              <img 
-                src="/assets/11.png"
-                alt="सक्षमीकरण कार्यक्रम"
-                className="w-full h-auto object-cover bg-gradient-to-br from-orange-100 to-orange-200"
-              />
-              
-              {/* Overlay Badge */}
-              <div className="absolute bottom-6 left-6 right-6">
-                <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
-                  <p className="text-orange-600 font-bold text-lg">
-                    {empowermentPrograms[activeCategory].category}
-                  </p>
-                  <p className="text-gray-600 text-sm">
-                    {empowermentPrograms[activeCategory].programs.length} कार्यक्रम पूर्ण
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Right - Programs List */}
           <div className={`space-y-4 transition-all duration-700 ${isVisible ? 'animate-fade-in-left' : 'opacity-0'}`}>
             <h3 className="text-2xl font-bold text-gray-800 mb-6">
               {empowermentPrograms[activeCategory].category}
@@ -161,6 +138,30 @@ const EmpowermentSection = () => {
               रस्ते विकास पहा
               <ChevronDown className="w-5 h-5 animate-bounce" />
             </button>
+          </div>
+          
+
+          {/* Right - Programs List */}
+          <div className={`relative transition-all duration-700 ${isVisible ? 'animate-fade-in-right' : 'opacity-0'}`}>
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <img 
+                src="/assets/11.png"
+                alt="सक्षमीकरण कार्यक्रम"
+                className="w-full h-auto object-cover bg-gradient-to-br from-orange-100 to-orange-200"
+              />
+              
+              {/* Overlay Badge */}
+              <div className="absolute bottom-6 left-6 right-6">
+                <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
+                  <p className="text-orange-600 font-bold text-lg">
+                    {empowermentPrograms[activeCategory].category}
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    {empowermentPrograms[activeCategory].programs.length} कार्यक्रम पूर्ण
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
