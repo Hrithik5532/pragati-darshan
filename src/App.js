@@ -14,6 +14,7 @@ import PromisesSection from "./components/PromisesSection";
 import TeamSection from "./components/TeamSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
+import CollageGallery from "./components/CollageGallery";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -39,6 +40,7 @@ function App() {
             <EmpowermentSection />
             <RoadsSection />
             <PromisesSection />
+            <CollageGallery />  
             <TeamSection />
             <ContactSection />
           </main>

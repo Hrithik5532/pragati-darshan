@@ -150,7 +150,7 @@ const HeroSection = () => {
               {/* Candidate Photo */}
               <div className="relative w-72 h-72 sm:w-96 sm:h-96 rounded-full overflow-hidden border-4 border-white/50 shadow-2xl">
                 <img 
-                  src="https://customer-assets.emergentagent.com/job_pragati-darshan/artifacts/wlnv9dv4_Screenshot_2026-01-13_at_2.46.00_AM-removebg-preview__1_-removebg-preview.png"
+                  src="public/assets/11.png"
                   alt={candidateInfo.name}
                   className="w-full h-full object-contain object-bottom bg-gradient-to-t from-orange-300 to-transparent scale-150 translate-y-16"
                 />

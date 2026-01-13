@@ -36,7 +36,7 @@ const EmpowermentSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 opacity-5">
         <img 
-          src="https://customer-assets.emergentagent.com/job_pragati-darshan/artifacts/wlnv9dv4_Screenshot_2026-01-13_at_2.46.00_AM-removebg-preview__1_-removebg-preview.png"
+          src="public/assets/11.png"
           alt=""
           className="absolute right-0 bottom-0 w-1/2 h-auto object-contain"
         />
