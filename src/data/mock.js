@@ -197,9 +197,9 @@ export const timelineEvents = [
 
 // Team Leaders from PDF
 export const teamLeaders = [
-  { name: "मा. नरेंद्र मोदी", position: "प्रधानमंत्री", tier: 1, image:"photos/modi.jpeg" },
-  { name: "मा. एकनाथ शिंदे", position: "विद्यमान उपमुख्यमंत्री", tier: 1, image:"photos/shinde.jpeg" },
-  { name: "मा. देवेंद्र फडणवीस", position: "मुख्यमंत्री, महाराष्ट्र", tier: 1, image:"photos/fadnavis.jpeg" },
+  { name: "मा. नरेंद्र मोदी", position: "प्रधानमंत्री", tier: 1, image:"photos/modi.png" },
+  { name: "मा. एकनाथ शिंदे", position: "विद्यमान उपमुख्यमंत्री", tier: 1, image:"photos/shinde.png" },
+  { name: "मा. देवेंद्र फडणवीस", position: "मुख्यमंत्री, महाराष्ट्र", tier: 1, image:"photos/fadnavis.png" },
   { name: "मा. दिलीप मामा लांडे", position: "आमदार", tier: 2, image:"photos/dilipMama.png" },
   { name: "श्री. राम कदम", position: "आमदार", tier: 2, image:"photos/kadam.png" }
 ];
@@ -207,6 +207,7 @@ export const teamLeaders = [
 // Nav Items
 export const navItems = [
   { id: "hero", label: "मुख्यपृष्ठ" },
+  { id: "intro", label: "माझा परिचय" },
   { id: "stats", label: "कामगिरी" },
   { id: "timeline", label: "विकास यात्रा" },
   { id: "empowerment", label: "सक्षमीकरण" },

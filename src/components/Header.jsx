@@ -53,11 +53,14 @@ const Header = () => {
             onClick={() => scrollToSection('hero')}
           >
             <div className={`w-12 h-12 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform duration-300`}>
-              <span className="text-white font-bold text-xl">क</span>
+              <img 
+                src="/assets/logo.jpg" 
+                alt="Logo" 
+                className="w-8 h-8 object-contain"
+              />
             </div>
             <div className={`hidden sm:block transition-colors duration-300 ${isScrolled ? 'text-gray-800' : 'text-white'}`}>
-              <p className="font-bold text-lg leading-tight">किरण भाऊ</p>
-              <p className="text-xs opacity-80">प्रभाग क्र. १६०</p>
+              <p className="font-bold text-lg leading-tight">श्री. किरण (भाऊ) लांडगे</p>
             </div>
           </div>
 

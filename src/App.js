@@ -15,7 +15,7 @@ import TeamSection from "./components/TeamSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
 import CollageGallery from "./components/CollageGallery";
-
+import IntroSection from "./components/IntroSection";
 function App() {
   const [showSplash, setShowSplash] = useState(true);
 
@@ -35,6 +35,7 @@ function App() {
           <Header />
           <main>
             <HeroSection />
+            <IntroSection />
             <StatsSection />
             <TimelineSection />
             <EmpowermentSection />

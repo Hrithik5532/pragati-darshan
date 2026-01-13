@@ -54,28 +54,38 @@ const HeroSection = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Animated Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-orange-600 via-orange-500 to-amber-500">
-        {/* Silk Wave Effect */}
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1440 320%22%3E%3Cpath fill=%22%23fff%22 fill-opacity=%220.3%22 d=%22M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,208C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z%22%3E%3C/path%3E%3C/svg%3E')] bg-cover bg-bottom animate-pulse"></div>
-        </div>
+      <div className="absolute inset-0 overflow-hidden">
         
-        {/* Floating particles */}
-        <div className="absolute inset-0">
-          {[...Array(20)].map((_, i) => (
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-center bg-no-repeat bg-contain"
+          style={{
+            backgroundImage: "url('/assets/bg.jpg')"
+          }}
+        />
+
+        {/* Wave Animation Overlay */}
+        <div className="absolute inset-0 opacity-40 pointer-events-none">
+          <div className="absolute bottom-0 left-0 w-full h-full bg-[url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1440 320%22%3E%3Cpath fill=%22%23ffffff%22 fill-opacity=%220.25%22 d=%22M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,208C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z%22%3E%3C/path%3E%3C/svg%3E')] bg-cover bg-bottom animate-wave"></div>
+        </div>
+
+        {/* Floating Particles */}
+        <div className="absolute inset-0 pointer-events-none">
+          {[...Array(16)].map((_, i) => (
             <div
               key={i}
-              className="absolute w-2 h-2 bg-white/20 rounded-full animate-float"
+              className="absolute w-2 h-2 bg-white/30 rounded-full animate-float"
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 5}s`,
-                animationDuration: `${3 + Math.random() * 4}s`
+                animationDelay: `${i * 0.4}s`,
+                animationDuration: `${4 + i * 0.3}s`
               }}
             />
           ))}
         </div>
       </div>
+
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -130,7 +140,7 @@ const HeroSection = () => {
                 कार्य अहवाल PDF
               </a>
               <a 
-                href={candidateInfo.pdfUrl}
+                href={candidateInfo.pdfUrl1}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 bg-amber-400 text-orange-900 font-bold rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
@@ -172,9 +182,9 @@ const HeroSection = () => {
               </div>
 
               {/* Serial Number Badge */}
-              <div className="absolute -top-2 -right-2 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-xl">
+              {/* <div className="absolute -top-2 -right-2 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-xl">
                 <span className="text-orange-600 font-bold text-3xl">{candidateInfo.serialNumber}</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
