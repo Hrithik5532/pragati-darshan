@@ -135,11 +135,11 @@ const EmpowermentSection = () => {
                       className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105 aspect-square"
                     >
                       <img 
-                        src={`/assets/${image}`}
+                        src={`/assets/empowerment/${image}`}
                         alt={`${empowermentPrograms[activeCategory].category} ${index + 1}`}
                         className="w-full h-full object-cover bg-gradient-to-br from-gray-100 to-gray-200"
                         onError={(e) => {
-                          e.target.src = `/assets/${image}`;
+                          e.target.src = `/assets/empowerment/${image}`;
                         }}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-3">

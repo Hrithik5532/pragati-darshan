@@ -77,7 +77,7 @@ export const empowermentPrograms = [
       "१५०+ गरीब गरजू महिलांना मोफत घरघंटी वाटप",
       "८०+ महिला बचत गटातील महिलांना मोफत कुकर वाटप"
     ],
-    images: ['mahila/mahila-1.jpg', 'mahila/mahila-2.jpg', 'mahila/mahila-3.jpg']
+    images: ['mahila-1.jpg', 'mahila-2.jpg', 'mahila-3.jpg']
   },
   {
     category: "शिक्षण सहाय्य",
@@ -88,7 +88,7 @@ export const empowermentPrograms = [
       "५०+ गरीब गरजू विद्यार्थ्यांना मोफत लॅपटॉप वाटप",
       "विभागातील सावते महाविद्यालयातील विद्यार्थ्यांना मोफत गणवेश वाटप"
     ],
-    images: ['shikshan/shikshan-1.jpg', 'shikshan/shikshan-2.jpg', 'shikshan/shikshan-3.jpg']
+    images: ['shikshan-1.jpg', 'shikshan-2.jpg', 'shikshan-3.jpg']
   },
   {
     category: "सामाजिक कार्य",
@@ -100,7 +100,7 @@ export const empowermentPrograms = [
       "९,०००+ नागरिकांना मोफत छत्री वाटप",
       "१५०+ फेरीवाल्यांना मोफत व्यावसायिक छत्री वाटप"
     ],
-    images: ['samajik/samajik-1.jpg', 'samajik/samajik-2.jpg', 'samajik/samajik-3.jpg', 'samajik/samajik-4.jpg']
+    images: ['samajik-1.jpg', 'samajik-2.jpg', 'samajik-3.jpg', 'samajik-4.jpg']
   },
   {
     category: "कोविड योद्धा",
@@ -111,7 +111,7 @@ export const empowermentPrograms = [
       "१७०+ मोतीबिंदू रुग्णांची मोफत शस्त्रक्रिया",
       "४०००+ लाडकी बहीण योजना अर्ज भरण्यास मदत"
     ],
-    images: ['covid/covid-1.jpg', 'covid/covid-2.jpg', 'covid/covid-3.jpg', 'covid/covid-4.jpg']
+    images: ['covid-1.jpg', 'covid-2.jpg', 'covid-3.jpg', 'covid-4.jpg']
   }
 ];
 
