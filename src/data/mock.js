@@ -15,7 +15,8 @@ export const candidateInfo = {
   promiseSlogan: "वचनपूर्ती हाच विकासाचा प्राण, पुन्हा किरणभाऊ आणि धनुष्यबाण!",
   votingDate: "गुरुवार, १५ जानेवारी २०२६",
   votingTime: "सकाळी ७:३० ते सायं. ५:३० वा.",
-  pdfUrl: "https://customer-assets.emergentagent.com/job_pragati-darshan/artifacts/g0pz7a9v_Karya%20ahwal.pdf"
+  pdfUrl: "https://customer-assets.emergentagent.com/job_pragati-darshan/artifacts/g0pz7a9v_Karya%20ahwal.pdf",
+  pdfUrl1:"/assets/Prabhag No_160.pdf"
 };
 
 export const stats = [
@@ -199,8 +200,8 @@ export const teamLeaders = [
   { name: "मा. नरेंद्र मोदी", position: "प्रधानमंत्री", tier: 1, image:"photos/modi.jpeg" },
   { name: "मा. एकनाथ शिंदे", position: "विद्यमान उपमुख्यमंत्री", tier: 1, image:"photos/shinde.jpeg" },
   { name: "मा. देवेंद्र फडणवीस", position: "मुख्यमंत्री, महाराष्ट्र", tier: 1, image:"photos/fadnavis.jpeg" },
-  // { name: "मा. बाळासाहेब ठाकरे", position: "शिवसेना पक्षप्रमुख", tier: 2, image:"photos/thakre.jpeg" },
-  { name: "श्री. राम कदम", position: "आमदार", tier: 2, image:"photos/kadam.jpeg" }
+  { name: "मा. दिलीप मामा लांडे", position: "आमदार", tier: 2, image:"photos/dilipMama.png" },
+  { name: "श्री. राम कदम", position: "आमदार", tier: 2, image:"photos/kadam.png" }
 ];
 
 // Nav Items

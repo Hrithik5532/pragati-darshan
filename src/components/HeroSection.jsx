@@ -129,6 +129,15 @@ const HeroSection = () => {
                 <Download className="w-5 h-5" />
                 कार्य अहवाल PDF
               </a>
+              <a 
+                href={candidateInfo.pdfUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 bg-amber-400 text-orange-900 font-bold rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
+              >
+                <Download className="w-5 h-5" />
+                कार्य अहवाल PDF
+              </a>
             </div>
 
             {/* Voting Info */}
