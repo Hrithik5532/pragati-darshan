@@ -66,7 +66,11 @@ const TeamSection = () => {
               >
                 <div className="w-20 h-20 sm:w-28 sm:h-28 mx-auto mb-3 rounded-2xl bg-white/20 backdrop-blur-sm p-1 shadow-xl hover:scale-110 transition-transform duration-300">
                   <div className="w-full h-full rounded-xl bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center">
-                    <Users className="w-8 h-8 sm:w-12 sm:h-12 text-orange-500" />
+                    <img 
+                      src={`/assets/${leader.image}`}
+                      alt={leader.name}
+                      className="w-12 h-12 sm:w-16 sm:h-16 object-contain"
+                    />
                   </div>
                 </div>
                 <p className="text-white font-bold text-sm sm:text-base">{leader.name}</p>

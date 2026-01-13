@@ -196,11 +196,11 @@ export const timelineEvents = [
 
 // Team Leaders from PDF
 export const teamLeaders = [
-  { name: "मा. नरेंद्र मोदी", position: "प्रधानमंत्री", tier: 1, image:""},
-  { name: "मा. एकनाथ शिंदे", position: "विद्यमान उपमुख्यमंत्री", tier: 1, image:""},
-  { name: "मा. देवेंद्र फडणवीस", position: "मुख्यमंत्री, महाराष्ट्र", tier: 1, image:""},
-  { name: "मा. उद्धव ठाकरे", position: "शिवसेना पक्षप्रमुख", tier: 2, image:""},
-  { name: "श्री. राम कदम", position: "आमदार", tier: 2, image:""}
+  { name: "मा. नरेंद्र मोदी", position: "प्रधानमंत्री", tier: 1, image:"photos/modi.jpeg" },
+  { name: "मा. एकनाथ शिंदे", position: "विद्यमान उपमुख्यमंत्री", tier: 1, image:"photos/shinde.jpeg" },
+  { name: "मा. देवेंद्र फडणवीस", position: "मुख्यमंत्री, महाराष्ट्र", tier: 1, image:"photos/fadnavis.jpeg" },
+  // { name: "मा. बाळासाहेब ठाकरे", position: "शिवसेना पक्षप्रमुख", tier: 2, image:"photos/thakre.jpeg" },
+  { name: "श्री. राम कदम", position: "आमदार", tier: 2, image:"photos/kadam.jpeg" }
 ];
 
 // Nav Items
