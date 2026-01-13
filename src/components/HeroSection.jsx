@@ -53,7 +53,6 @@ const HeroSection = () => {
       id="hero" 
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      <section className="relative w-full min-h-screen overflow-hidden">
   {/* ✅ Background Image */}
   <div
     className="absolute inset-0 bg-no-repeat bg-center bg-cover"
@@ -84,11 +83,7 @@ const HeroSection = () => {
     ))}
   </div>
 
-  {/* ✅ Content */}
-  <div className="relative z-10 max-w-7xl mx-auto px-6 py-24">
-    {/* YOUR HERO CONTENT */}
-  </div>
-</section>
+
 
 
 

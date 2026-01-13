@@ -197,11 +197,13 @@ const ContactSection = () => {
                 <Phone className="w-8 h-8 mb-3" />
                 <p className="font-bold text-lg mb-1">संपर्क क्रमांक</p>
                 <p className="text-white/80">+91 98765 43210</p>
+                <p className="text-white/80">+91 99305 13335</p>
               </div>
               <div className="bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl p-6 text-white">
                 <MessageCircle className="w-8 h-8 mb-3" />
                 <p className="font-bold text-lg mb-1">WhatsApp</p>
                 <p className="text-white/80">+91 98765 43210</p>
+                <p className="text-white/80">+91 99305 13335</p>
               </div>
             </div>
 
@@ -217,6 +219,14 @@ const ContactSection = () => {
                   className="flex-1 py-3 text-center bg-gray-50 rounded-xl text-gray-600 font-medium hover:bg-orange-50 hover:text-orange-600 transition-colors text-sm"
                 >
                   Instagram
+                </a>
+                <a
+                  href="https://www.facebook.com/share/17zu1tqG2Z/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 py-3 text-center bg-gray-50 rounded-xl text-gray-600 font-medium hover:bg-orange-50 hover:text-orange-600 transition-colors text-sm"
+                >
+                  FaceBook
                 </a>
               </div>
 
