@@ -53,37 +53,43 @@ const HeroSection = () => {
       id="hero" 
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* ✅ Background Image */}
-      <div
-        className="absolute inset-0 bg-gradient-to-br from-orange-600 via-orange-500 to-amber-500 inset-0 bg-no-repeat bg-center bg-cover"
-        style={{
-          backgroundImage: "url('/assets/logo-removebg-preview.png')",
-        }}
-      />
+     {/* ✅ Background (Gradient + Image) */}
+<div
+  className="absolute inset-0 bg-no-repeat bg-center bg-contain"
+  style={{
+    backgroundImage: `
+      linear-gradient(
+        135deg,
+        rgba(234, 88, 12, 0.95),
+        rgba(249, 115, 22, 0.9),
+        rgba(251, 191, 36, 0.85)
+      ),
+      url('/assets/logo-removebg-preview.png')
+    `,
+  }}
+/>
 
-      {/* ✅ Animation Overlay (NO COLOR) */}
-      <div className="absolute inset-0 pointer-events-none">
-        {/* Silk Wave */}
-        <div className="absolute bottom-0 w-full h-40 opacity-30">
-          <div className="w-full h-full bg-[url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1440 320%22%3E%3Cpath fill=%22%23ffffff%22 fill-opacity=%220.4%22 d=%22M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,208C1248,224,1344,192,1392,176L1440,160L1440,320L0,320Z%22/%3E%3C/svg%3E')] bg-cover bg-bottom animate-pulse" />
-        </div>
+{/* ✅ Animation Overlay */}
+<div className="absolute inset-0 pointer-events-none">
+  {/* Silk wave */}
+  <div className="absolute bottom-0 w-full h-40 opacity-25">
+    <div className="w-full h-full bg-[url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1440 320%22%3E%3Cpath fill=%22%23ffffff%22 fill-opacity=%220.35%22 d=%22M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,208C1248,224,1344,192,1392,176L1440,160L1440,320L0,320Z%22/%3E%3C/svg%3E')] bg-cover bg-bottom animate-pulse" />
+  </div>
 
-        {/* Floating particles */}
-        {[...Array(15)].map((_, i) => (
-          <span
-            key={i}
-            className="absolute w-2 h-2 bg-white/40 rounded-full animate-float"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 5}s`,
-              animationDuration: `${4 + Math.random() * 4}s`,
-            }}
-          />
-        ))}
-      </div>
-
-
+  {/* Floating particles */}
+  {[...Array(14)].map((_, i) => (
+    <span
+      key={i}
+      className="absolute w-2 h-2 bg-white/30 rounded-full animate-float"
+      style={{
+        left: `${Math.random() * 100}%`,
+        top: `${Math.random() * 100}%`,
+        animationDelay: `${Math.random() * 6}s`,
+        animationDuration: `${5 + Math.random() * 4}s`,
+      }}
+    />
+  ))}
+</div>
 
 
 
