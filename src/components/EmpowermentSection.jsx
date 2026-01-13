@@ -86,7 +86,7 @@ const EmpowermentSection = () => {
               {/* Main Image */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img 
-                  src={empowermentPrograms[activeCategory].images[0] || "/assets/11.png"}
+                  src="/assets/11.png"
                   alt="सक्षमीकरण कार्यक्रम"
                   className="w-full h-80 object-cover bg-gradient-to-br from-orange-100 to-orange-200"
                 />
@@ -123,7 +123,8 @@ const EmpowermentSection = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div>  
+
         {/* Additional Info Cards */}
         <div className="mt-16 grid sm:grid-cols-3 gap-6">
           <div className="bg-gradient-to-br from-pink-500 to-rose-500 rounded-2xl p-6 text-white text-center">

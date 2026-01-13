@@ -66,7 +66,7 @@ export const infrastructureProjects = {
   ]
 };
 
-// Empowerment Programs from PDF
+// Updated empowermentPrograms with correct Google Drive image URLs
 export const empowermentPrograms = [
   { 
     category: "महिला सक्षमीकरण",
@@ -77,7 +77,12 @@ export const empowermentPrograms = [
       "१५०+ गरीब गरजू महिलांना मोफत घरघंटी वाटप",
       "८०+ महिला बचत गटातील महिलांना मोफत कुकर वाटप"
     ],
-    images: ['https://drive.google.com/file/d/1bRUGtY0YXB5KYvDOq08T9-OWoqmLXSNL/view?usp=drive_link','https://drive.google.com/file/d/109uzvN0_Up7MiI82ngJRcog7x5Gt1D89/view?usp=drive_link','https://drive.google.com/file/d/1ijQF1hRA3spwSf9Ub9ZsK1HZwFv9JI_D/view?usp=drive_link','']
+    images: [
+      'https://drive.google.com/uc?export=view&id=1bRUGtY0YXB5KYvDOq08T9-OWoqmLXSNL',
+      'https://drive.google.com/uc?export=view&id=109uzvN0_Up7MiI82ngJRcog7x5Gt1D89',
+      'https://drive.google.com/uc?export=view&id=1ijQF1hRA3spwSf9Ub9ZsK1HZwFv9JI_D',
+      '' // Keep empty string for 4th image if not available
+    ]
   },
   {
     category: "शिक्षण सहाय्य",
@@ -88,7 +93,12 @@ export const empowermentPrograms = [
       "५०+ गरीब गरजू विद्यार्थ्यांना मोफत लॅपटॉप वाटप",
       "विभागातील सावते महाविद्यालयातील विद्यार्थ्यांना मोफत गणवेश वाटप"
     ],
-    images: ['https://drive.google.com/file/d/13h8HmO0hWRdIN9IjGI3izvNuH9pAzKUz/view?usp=sharing','https://drive.google.com/file/d/1fHVAxIgG5doMthvBEhCO-2FRtVMi_wQR/view?usp=drive_link','https://drive.google.com/file/d/1hk9E85yWqy--525gcwuZX4sDnWeGiuNk/view?usp=drive_link','']
+    images: [
+      'https://drive.google.com/uc?export=view&id=13h8HmO0hWRdIN9IjGI3izvNuH9pAzKUz',
+      'https://drive.google.com/uc?export=view&id=1fHVAxIgG5doMthvBEhCO-2FRtVMi_wQR',
+      'https://drive.google.com/uc?export=view&id=1hk9E85yWqy--525gcwuZX4sDnWeGiuNk',
+      ''
+    ]
   },
   {
     category: "सामाजिक कार्य",
@@ -100,7 +110,12 @@ export const empowermentPrograms = [
       "९,०००+ नागरिकांना मोफत छत्री वाटप",
       "१५०+ फेरीवाल्यांना मोफत व्यावसायिक छत्री वाटप"
     ],
-    images: ['https://drive.google.com/file/d/18zjkleVqmvQw_Hx2HOBbAJBLjkMHKvq9/view?usp=drive_link','https://drive.google.com/file/d/1xhVl3ZzexNx0K4_NfPLO1NI-YHMN0jNA/view?usp=drive_link','https://drive.google.com/file/d/1MhSNrquUvlmNkREXCNoEgkq9AsVQbTJ4/view?usp=drive_link','https://drive.google.com/file/d/1XHklsdi9wNFEasF3pMGbpKQcLQAOxP9m/view?usp=drive_link']
+    images: [
+      'https://drive.google.com/uc?export=view&id=18zjkleVqmvQw_Hx2HOBbAJBLjkMHKvq9',
+      'https://drive.google.com/uc?export=view&id=1xhVl3ZzexNx0K4_NfPLO1NI-YHMN0jNA',
+      'https://drive.google.com/uc?export=view&id=1MhSNrquUvlmNkREXCNoEgkq9AsVQbTJ4',
+      'https://drive.google.com/uc?export=view&id=1XHklsdi9wNFEasF3pMGbpKQcLQAOxP9m'
+    ]
   },
   {
     category: "कोविड योद्धा",
@@ -111,10 +126,14 @@ export const empowermentPrograms = [
       "१७०+ मोतीबिंदू रुग्णांची मोफत शस्त्रक्रिया",
       "४०००+ लाडकी बहीण योजना अर्ज भरण्यास मदत"
     ],
-    images: ['https://drive.google.com/file/d/1PoG2hb5vHky2IR0R-0b-qdMKhM8rQA8O/view?usp=drive_link','https://drive.google.com/file/d/1LFvJ1WWKVs1k0gVIoWS9zHxxoSxy43Xl/view?usp=drive_link','https://drive.google.com/file/d/1DSq-Ghzlw3hSbIpuWY3YirAwUk7zan6T/view?usp=drive_link','https://drive.google.com/file/d/1TUZ_G0_ocC7cShO0XmJYve5FhLHlobLX/view?usp=drive_link']
+    images: [
+      'https://drive.google.com/uc?export=view&id=1PoG2hb5vHky2IR0R-0b-qdMKhM8rQA8O',
+      'https://drive.google.com/uc?export=view&id=1LFvJ1WWKVs1k0gVIoWS9zHxxoSxy43Xl',
+      'https://drive.google.com/uc?export=view&id=1DSq-Ghzlw3hSbIpuWY3YirAwUk7zan6T',
+      'https://drive.google.com/uc?export=view&id=1TUZ_G0_ocC7cShO0XmJYve5FhLHlobLX'
+    ]
   }
 ];
-
 // Future Promises from PDF - "होय, हा माझा शब्द आहे!"
 export const futurePromises = [
   {
