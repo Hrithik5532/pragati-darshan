@@ -180,13 +180,14 @@ const ContactSection = () => {
                 <MapPin className="w-5 h-5 text-orange-500" />
                 प्रभाग क्र. १६०
               </h3>
-              <div className="aspect-video rounded-2xl overflow-hidden bg-gray-100">
+              <div className="rounded-2xl overflow-hidden bg-gray-100 h-[400px] flex items-center justify-center">
                 <img
                   src="/assets/Prabhag No_160.png"
                   alt="प्रभाग नकाशा"
-                  className="w-full h-full object-contain"
+                  className="max-w-full max-h-full object-contain"
                 />
               </div>
+
 
             </div>
 
