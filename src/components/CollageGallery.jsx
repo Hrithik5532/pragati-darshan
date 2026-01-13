@@ -61,9 +61,7 @@ const CollageGallery = () => {
               alt={img.alt}
               className="w-full h-full object-cover"
               loading="lazy"
-              onError={(e) => {
-                e.target.src = "/assets/11.png"; // fallback
-              }}
+         
             />
           </div>
         ))}
