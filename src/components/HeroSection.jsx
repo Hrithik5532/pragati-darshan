@@ -53,38 +53,42 @@ const HeroSection = () => {
       id="hero" 
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Animated Background */}
-<div className="absolute inset-0 overflow-hidden">
-
-  {/* Background Image (FULL WIDTH) */}
+      <section className="relative w-full min-h-screen overflow-hidden">
+  {/* ✅ Background Image */}
   <div
-    className="absolute inset-0 bg-center bg-no-repeat bg-cover"
+    className="absolute inset-0 bg-no-repeat bg-center bg-cover"
     style={{
-      backgroundImage: "url('/assets/bg.jpg')"
+      backgroundImage: "url('/assets/bg.jpg')",
     }}
   />
 
-  {/* Wave Animation Overlay */}
-  <div className="absolute inset-0 opacity-30 pointer-events-none">
-    <div className="absolute bottom-0 left-0 w-full h-full bg-[url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1440 320%22%3E%3Cpath fill=%22%23ffffff%22 fill-opacity=%220.25%22 d=%22M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,208C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z%22%3E%3C/path%3E%3C/svg%3E')] bg-cover bg-bottom animate-wave"></div>
-  </div>
-
-  {/* Floating Particles */}
+  {/* ✅ Animation Overlay (NO COLOR) */}
   <div className="absolute inset-0 pointer-events-none">
-    {[...Array(14)].map((_, i) => (
-      <div
+    {/* Silk Wave */}
+    <div className="absolute bottom-0 w-full h-40 opacity-30">
+      <div className="w-full h-full bg-[url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1440 320%22%3E%3Cpath fill=%22%23ffffff%22 fill-opacity=%220.4%22 d=%22M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,208C1248,224,1344,192,1392,176L1440,160L1440,320L0,320Z%22/%3E%3C/svg%3E')] bg-cover bg-bottom animate-pulse" />
+    </div>
+
+    {/* Floating particles */}
+    {[...Array(15)].map((_, i) => (
+      <span
         key={i}
-        className="absolute w-2 h-2 bg-white/30 rounded-full animate-float"
+        className="absolute w-2 h-2 bg-white/40 rounded-full animate-float"
         style={{
           left: `${Math.random() * 100}%`,
           top: `${Math.random() * 100}%`,
-          animationDelay: `${i * 0.4}s`,
-          animationDuration: `${4 + i * 0.3}s`
+          animationDelay: `${Math.random() * 5}s`,
+          animationDuration: `${4 + Math.random() * 4}s`,
         }}
       />
     ))}
   </div>
-</div>
+
+  {/* ✅ Content */}
+  <div className="relative z-10 max-w-7xl mx-auto px-6 py-24">
+    {/* YOUR HERO CONTENT */}
+  </div>
+</section>
 
 
 
