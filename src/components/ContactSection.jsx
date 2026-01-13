@@ -184,9 +184,10 @@ const ContactSection = () => {
                 <img
                   src="/assets/Prabhag No_160.png"
                   alt="प्रभाग नकाशा"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
+
             </div>
 
             {/* Contact Cards */}
