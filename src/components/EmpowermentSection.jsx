@@ -81,7 +81,7 @@ const EmpowermentSection = () => {
         {/* Programs Display */}
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left - Image */}
-          <div className={`relative transition-all duration-700 ${isVisible ? 'animate-fade-in-left' : 'opacity-0'}`}>
+          <div className={`relative transition-all duration-700 ${isVisible ? 'animate-fade-in-right' : 'opacity-0'}`}>
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img 
                 src="/assets/11.png"
@@ -104,7 +104,7 @@ const EmpowermentSection = () => {
           </div>
 
           {/* Right - Programs List */}
-          <div className={`space-y-4 transition-all duration-700 ${isVisible ? 'animate-fade-in-right' : 'opacity-0'}`}>
+          <div className={`space-y-4 transition-all duration-700 ${isVisible ? 'animate-fade-in-left' : 'opacity-0'}`}>
             <h3 className="text-2xl font-bold text-gray-800 mb-6">
               {empowermentPrograms[activeCategory].category}
             </h3>
