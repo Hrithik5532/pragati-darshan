@@ -181,15 +181,11 @@ const ContactSection = () => {
                 प्रभाग क्र. १६०
               </h3>
               <div className="aspect-video rounded-2xl overflow-hidden bg-gray-100">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60279.08771653556!2d72.8295155!3d19.1700515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63ac1272c53%3A0x3c9b1e4deccfc6a6!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1610000000000!5m2!1sen!2sin"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  title="Ward 160 Map"
-                ></iframe>
+                <img
+                  src="/assets/Prabhag No_160.png"
+                  alt="प्रभाग नकाशा"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 
