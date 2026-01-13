@@ -80,7 +80,7 @@ const SecondRow = () => {
   const scrollRef = useRef(null);
 
   // use same images or different range if you want
-  const images = generateImages(1, 47);
+  const images = generateImages(1, 43);
   const duplicatedImages = [...images, ...images];
 
   useEffect(() => {

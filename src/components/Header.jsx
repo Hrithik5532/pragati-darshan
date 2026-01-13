@@ -52,13 +52,16 @@ const Header = () => {
             className="flex items-center gap-3 cursor-pointer"
             onClick={() => scrollToSection('hero')}
           >
-            <div className={`w-12 h-12 rounded-full bg-white  flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform duration-300`}>
-              <img 
-                src="/assets/bghhjjjjj.png" 
-                alt="Logo" 
-                className="w-8 h-8 object-contain"
-              />
-            </div>
+                <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-md
+                      transition-all duration-300 ease-out
+                      hover:scale-110 hover:shadow-xl active:scale-95">
+        <img 
+          src="/assets/bghhjjjjj.png" 
+          alt="Logo" 
+          className="w-8 h-8 object-contain transition-transform duration-300 group-hover:rotate-3"
+        />
+      </div>
+
             <div className={`hidden sm:block transition-colors duration-300 ${isScrolled ? 'text-gray-800' : 'text-white'}`}>
               <p className="font-bold text-lg leading-tight">श्री. किरण (भाऊ) लांडगे</p>
             </div>
@@ -72,9 +75,9 @@ const Header = () => {
                 onClick={() => scrollToSection(item.id)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                   activeSection === item.id
-                    ? 'bg-orange-500 text-white shadow-lg'
+                    ? 'bg-white-500 text-white shadow-lg'
                     : isScrolled
-                      ? 'text-gray-700 hover:bg-orange-100 hover:text-orange-600'
+                      ? 'text-gray-700 hover:bg-white-100 hover:text-white-600'
                       : 'text-white/90 hover:bg-white/20 hover:text-white'
                 }`}
               >
