@@ -80,7 +80,8 @@ const TeamSection = () => {
           </div>
 
           {/* Second Row - Tier 2 */}
-          <div className="flex justify-center gap-4 sm:gap-6 mb-8">
+          <div className="flex justify-center gap-6 sm:gap-6 mb-8 flex-wrap sm:flex-nowrap">
+
             {teamLeaders.filter(l => l.tier === 2).map((leader, index) => (
               <div
                 key={index}
@@ -89,7 +90,7 @@ const TeamSection = () => {
                 }`}
                 style={{ animationDelay: `${(index + 3) * 150}ms` }}
               >
-                <div className="w-25 h-25 sm:w-28 sm:h-28 mx-auto mb-3 rounded-2xl bg-white/20 backdrop-blur-sm p-1 shadow-xl hover:scale-110 transition-transform duration-300">
+                <div className="w-28 h-28 sm:w-28 sm:h-28 mx-auto mb-4 rounded-2xl bg-white/20 backdrop-blur-sm p-1 shadow-xl hover:scale-110 transition-transform duration-300">
                   <div className="w-full h-full rounded-xl bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center">
                     <img 
                       src={`/assets/${leader.image}`}
