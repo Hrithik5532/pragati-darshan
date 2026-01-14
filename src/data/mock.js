@@ -202,8 +202,8 @@ export const teamLeaders = [
   { name: "मा. नरेंद्र मोदी", position: "प्रधानमंत्री", tier: 1, image:"photos/modi.png" },
   { name: "मा. एकनाथ शिंदे", position: "विद्यमान उपमुख्यमंत्री", tier: 1, image:"photos/shinde.png" },
   { name: "मा. देवेंद्र फडणवीस", position: "मुख्यमंत्री, महाराष्ट्र", tier: 1, image:"photos/fadnavis.png" },
-  { name: "मा. दिलीप मामा लांडे", position: "आमदार", tier: 1, image:"photos/dilipMama.png" },
-  { name: "श्री. राम कदम", position: "आमदार", tier: 1, image:"photos/kadam.png" }
+  { name: "मा. दिलीप मामा लांडे", position: "आमदार", tier: 2, image:"photos/dilipMama.png" },
+  { name: "श्री. राम कदम", position: "आमदार", tier: 2, image:"photos/kadam.png" }
 ];
 
 // Nav Items
