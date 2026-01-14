@@ -64,7 +64,7 @@ const TeamSection = () => {
                 }`}
                 style={{ animationDelay: `${index * 150}ms` }}
               >
-                <div className="w-20 h-20 sm:w-28 sm:h-28 mx-auto mb-3 rounded-2xl bg-white/20 backdrop-blur-sm p-1 shadow-xl hover:scale-110 transition-transform duration-300">
+                <div className="w-25 h-25 sm:w-28 sm:h-28 mx-auto mb-3 rounded-2xl bg-white/20 backdrop-blur-sm p-1 shadow-xl hover:scale-110 transition-transform duration-300">
                   <div className="w-full h-full rounded-xl bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center">
                     <img 
                       src={`/assets/${leader.image}`}
@@ -89,7 +89,7 @@ const TeamSection = () => {
                 }`}
                 style={{ animationDelay: `${(index + 3) * 150}ms` }}
               >
-                <div className="w-16 h-16 sm:w-24 sm:h-24 mx-auto mb-3 rounded-2xl bg-white/20 backdrop-blur-sm p-1 shadow-xl hover:scale-110 transition-transform duration-300">
+                <div className="w-25 h-25 sm:w-25 sm:h-24 mx-auto mb-3 rounded-2xl bg-white/20 backdrop-blur-sm p-1 shadow-xl hover:scale-110 transition-transform duration-300">
                   <div className="w-full h-full rounded-xl bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center">
                     <img 
                       src={`/assets/${leader.image}`}
