@@ -79,56 +79,30 @@ const TeamSection = () => {
             ))}
           </div>
 
-          {/* Second Row - Tier 2 */}
-          {/* <div className="flex justify-center gap-4 sm:gap-8 mb-8">
-
-            {teamLeaders.filter(l => l.tier === 2).map((leader, index) => (
-              <div
-                key={index}
-                className={`text-center transform transition-all duration-700 ${
-                  isVisible ? 'animate-fade-in-up' : 'opacity-0'
-                }`}
-                style={{ animationDelay: `${(index + 3) * 150}ms` }}
-              >
-                <div className="w-25 h-25 sm:w-28 sm:h-28 mx-auto mb-3 rounded-2xl bg-white/20 backdrop-blur-sm p-1 shadow-xl hover:scale-110 transition-transform duration-300">
-                  <div className="w-full h-full rounded-xl bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center">
-                    <img 
-                      src={`/assets/${leader.image}`}
-                      alt={leader.name}
-                      className="w-18 h-18 sm:w-16 sm:h-16 object-contain"
-                    />
+            {/* Second Row - Tier 2 */}
+          <div className="flex justify-center gap-6 sm:gap-8 mb-8 flex-wrap">
+              {teamLeaders.filter(l => l.tier === 2).map((leader, index) => (
+                <div
+                  key={index}
+                  className={`text-center transform transition-all duration-700 ${
+                    isVisible ? 'animate-fade-in-up' : 'opacity-0'
+                  }`}
+                  style={{ animationDelay: `${index * 150}ms` }}
+                >
+                  <div className="w-28 h-28 sm:w-28 sm:h-28 mx-auto mb-3 rounded-2xl bg-white/20 backdrop-blur-sm p-1 shadow-xl hover:scale-110 transition-transform duration-300">
+                    <div className="w-full h-full rounded-xl bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center">
+                      <img 
+                        src={`/assets/${leader.image}`}
+                        alt={leader.name}
+                        className="w-14 h-14 sm:w-16 sm:h-16 object-contain"
+                      />
+                    </div>
                   </div>
+                  <p className="text-white font-bold text-sm sm:text-base">{leader.name}</p>
+                  <p className="text-white/70 text-xs sm:text-sm">{leader.position}</p>
                 </div>
-                <p className="text-white font-bold text-sm sm:text-base">{leader.name}</p>
-                <p className="text-white/70 text-xs sm:text-sm">{leader.position}</p>
-              </div>
-            ))}
-          </div> */}
-          <div className="relative max-w-4xl mx-auto">
-          {/* Top Leaders - Tier 1 */}
-          <div className="flex justify-center gap-4 sm:gap-8 mb-8">
-            {teamLeaders.filter(l => l.tier === 2).map((leader, index) => (
-              <div
-                key={index}
-                className={`text-center transform transition-all duration-700 ${
-                  isVisible ? 'animate-fade-in-up' : 'opacity-0'
-                }`}
-                style={{ animationDelay: `${index * 150}ms` }}
-              >
-                <div className="w-25 h-25 sm:w-28 sm:h-28 mx-auto mb-3 rounded-2xl bg-white/20 backdrop-blur-sm p-1 shadow-xl hover:scale-110 transition-transform duration-300">
-                  <div className="w-full h-full rounded-xl bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center">
-                    <img 
-                      src={`/assets/${leader.image}`}
-                      alt={leader.name}
-                      className="w-12 h-12 sm:w-16 sm:h-16 object-contain"
-                    />
-                  </div>
-                </div>
-                <p className="text-white font-bold text-sm sm:text-base">{leader.name}</p>
-                <p className="text-white/70 text-xs sm:text-sm">{leader.position}</p>
-              </div>
-            ))}
-          </div>
+              ))}
+        
         </div>
           {/* Candidate Highlight */}
           <div className={`mt-12 bg-white rounded-3xl p-8 shadow-2xl transform transition-all duration-700 ${
