@@ -80,7 +80,7 @@ const TeamSection = () => {
           </div>
 
           {/* Second Row - Tier 2 */}
-          <div className="flex justify-center gap-6 sm:gap-6 mb-8 flex-wrap sm:flex-nowrap">
+          <div className="flex justify-center gap-4 sm:gap-8 mb-8">
 
             {teamLeaders.filter(l => l.tier === 2).map((leader, index) => (
               <div
