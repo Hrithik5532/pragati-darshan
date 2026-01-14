@@ -79,8 +79,8 @@ const TeamSection = () => {
             ))}
           </div>
 
-          {/* Second Row - Tier 2 */}
-          <div className="flex justify-center gap-6 sm:gap-6 mb-8 flex-wrap sm:flex-nowrap">
+          Second Row - Tier 2
+          {/* <div className="flex justify-center gap-6 sm:gap-6 mb-8 flex-wrap sm:flex-nowrap">
 
             {teamLeaders.filter(l => l.tier === 2).map((leader, index) => (
               <div
@@ -103,7 +103,7 @@ const TeamSection = () => {
                 <p className="text-white/70 text-xs sm:text-sm">{leader.position}</p>
               </div>
             ))}
-          </div>
+          </div> */}
 
           {/* Candidate Highlight */}
           <div className={`mt-12 bg-white rounded-3xl p-8 shadow-2xl transform transition-all duration-700 ${

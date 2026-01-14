@@ -62,7 +62,7 @@ const Header = () => {
         />
       </div>
 
-            <div className={`hidden sm:block transition-colors duration-300 ${isScrolled ? 'text-gray-800' : 'text-white'}`}>
+            <div className={` transition-colors duration-300 ${isScrolled ? 'text-gray-800' : 'text-white'}`}>
               <p className="font-bold text-lg leading-tight">श्री. किरण (भाऊ) लांडगे</p>
             </div>
           </div>
