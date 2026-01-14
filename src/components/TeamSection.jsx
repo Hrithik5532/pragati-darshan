@@ -64,12 +64,12 @@ const TeamSection = () => {
                 }`}
                 style={{ animationDelay: `${index * 150}ms` }}
               >
-                <div className="w-25 h-25 sm:w-28 sm:h-28 mx-auto mb-3 rounded-2xl bg-white/20 backdrop-blur-sm p-1 shadow-xl hover:scale-110 transition-transform duration-300">
+                <div className="w-28 h-28 sm:w-28 sm:h-28 mx-auto mb-3 rounded-2xl bg-white/20 backdrop-blur-sm p-1 shadow-xl hover:scale-110 transition-transform duration-300">
                   <div className="w-full h-full rounded-xl bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center">
                     <img 
                       src={`/assets/${leader.image}`}
                       alt={leader.name}
-                      className="w-12 h-12 sm:w-16 sm:h-16 object-contain"
+                          className="w-14 h-14 sm:w-16 sm:h-16 object-contain"
                     />
                   </div>
                 </div>
