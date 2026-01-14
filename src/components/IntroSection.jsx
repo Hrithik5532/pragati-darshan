@@ -66,9 +66,9 @@ const IntroSection = () => {
               </div>
 
               {/* Decorative stamp corner */}
-              <div className="absolute top-4 right-4 w-16 h-16 bg-orange-500/20 backdrop-blur-sm rounded-lg border-2 border-orange-500/50 flex items-center justify-center">
+              {/* <div className="absolute top-4 right-4 w-16 h-16 bg-orange-500/20 backdrop-blur-sm rounded-lg border-2 border-orange-500/50 flex items-center justify-center">
                 <Mail className="w-8 h-8 text-orange-600" />
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -91,9 +91,9 @@ const IntroSection = () => {
               </div>
 
               {/* Decorative Shiv Sena symbol */}
-              <div className="absolute top-4 right-4 w-16 h-16 bg-orange-500/20 backdrop-blur-sm rounded-lg border-2 border-orange-500/50 flex items-center justify-center">
+              {/* <div className="absolute top-4 right-4 w-16 h-16 bg-orange-500/20 backdrop-blur-sm rounded-lg border-2 border-orange-500/50 flex items-center justify-center">
                 <span className="text-3xl">🏹</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
