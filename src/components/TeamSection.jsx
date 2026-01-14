@@ -69,7 +69,7 @@ const TeamSection = () => {
                     <img 
                       src={`/assets/${leader.image}`}
                       alt={leader.name}
-                      className="w-18 h-18 sm:w-16 sm:h-16 object-contain"
+                      className="w-12 h-12 sm:w-16 sm:h-16 object-contain"
                     />
                   </div>
                 </div>
