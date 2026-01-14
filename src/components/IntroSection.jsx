@@ -52,7 +52,7 @@ const IntroSection = () => {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2 group">
               {/* Postcard Back Side */}
               <img 
-                src="/assets/intro/slide1.jpeg"
+                src="/assets/intro/slide2.jpeg"
                 alt="परिचय पत्र - भाग १"
                 className="w-full h-auto object-cover"
               />
